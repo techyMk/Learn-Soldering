@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- icon -->
+
+    <!-- Google fonts End -->
+
+    <!-- custon style Sheet & JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JavaScript/script.js" defer></script>
+    <!-- custon style Sheet & JavaScript -->
+    <title>Learn Soldering</title>
+    <link rel="icon" href="assets/learnsoldering-icon.svg">
+  </head>
+  <body class="home">
+
+    <!-- Header Section -->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+            <div class="logo">
+                <img src="assets/learnsoldering-logo-nav.svg" alt="Nav Logo">
+            </div>
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation">
+                <i class="uil uil-times-circle"></i>
+            </button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li><a class="active fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                    <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">About</a></li>
+                    <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                    <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                    <li><a class="fs-100 fs-montserrat bold-500" href="/contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+        <div class="header-login flex">
+            <p class="fs-100 fs-montserrat bold-500">login</p>
+            <i class="uil uil-search"></i>
+            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+
+            <!-- Cart Box -->
+            <div id="cart-icon" data-visible="false" class="cart-icon">
+                <div class="shopping flex">
+                    <p>Shopping</p>
+                    <i id="cross-btn" class="uil uil-times"></i>
+                </div>
+                <div class="cart bold-800 flex">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                    <p>Cart is Empty</p>
+                </div>
+            </div>
+            <!-- Cart Box End -->
+
+        </div>
+
+        <div class="mobile-open-btn">
+            <i class="uil uil-align-right"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+     <main class="hero-section">
+        <div>
+        <h1 class="fs-200 fs-poppins">Build. Solder. Create. 
+            <span class="big block lineheight fs-200 bold-900 fs-poppins">Spark Your Journey</span>
+            <span class="text-white uppercase lineheight2 bold-bolder fs-poppins fs-900">Learn Soldering</span></h1>
+            <img src="assets/learnsoldering.com.svg" alt="Hero">
+    </div>
+    <div class="hero-inner flex">
+        <div>
+            <button class="large-btn bg-red text-white fs-poppins fs-50">Shop Now</button>
+        </div>
+        <div class="hero-info">
+            <h4 class="fs-montserrat">Description</h4>
+            <p class="fs-montserrat">Whether you're a student, hobbyist, or future engineer, our <span>Learn Soldering</span> Kits make it easy to dive into electronics. No experience needed—just 30 minutes to complete your first working project.</p>
+            </div>
+        </div>
+    </main>
+
+  </body>
+</html>
