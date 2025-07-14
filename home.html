@@ -1,98 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the basics of soldering with our comprehensive guide. Perfect for beginners and hobbyists.">
+  <meta name="keywords" content="soldering, electronics, DIY, hobby, guide">
+  <meta name="author" content="learnsoldering.com">
+  <link rel="canonical" href="https://www.learnsoldering.com/home.html">
+  <link rel="alternate" href="https://www.learnsoldering.com/home.html" hreflang="en">
+  <link rel="alternate" type="application/rss+xml" href="https://www.learnsoldering.com/rss.xml">
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Preload images -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
 
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <!-- icon -->
+  <title>Learn Soldering</title>
 
-    <!-- Google fonts End -->
+  <!-- Favicon -->
+  <link rel="icon" href="">
 
-    <!-- custon style Sheet & JavaScript -->
-    <link rel="stylesheet" href="CSS/style.css" />
-    <script src="JavaScript/script.js" defer></script>
-    <!-- custon style Sheet & JavaScript -->
-    <title>Learn Soldering</title>
-    <link rel="icon" href="assets/learnsoldering-icon.svg">
-  </head>
-  <body class="home">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" type="text/css">
 
-    <!-- Header Section -->
-    <header class="primary-header container flex">
-        <div class="header-inner-one flex">
-            <div class="logo">
-                <img src="assets/learnsoldering-logo-nav.svg" alt="Nav Logo">
-            </div>
-            <button class="mobile-close-btn" data-visible="false"
-            aria-controls="primary-navigation">
-                <i class="uil uil-times-circle"></i>
-            </button>
-            <nav>
-                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                    <li><a class="active fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
-                    <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">About</a></li>
-                    <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
-                    <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
-                    <li><a class="fs-100 fs-montserrat bold-500" href="/contactus.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-            
-        <div class="header-login flex">
-            <p class="fs-100 fs-montserrat bold-500">login</p>
-            <i class="uil uil-search"></i>
-            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+  <!-- Box-icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-            <!-- Cart Box -->
-            <div id="cart-icon" data-visible="false" class="cart-icon">
-                <div class="shopping flex">
-                    <p>Shopping</p>
-                    <i id="cross-btn" class="uil uil-times"></i>
-                </div>
-                <div class="cart bold-800 flex">
-                    <i class="uil uil-shopping-cart-alt"></i>
-                    <p>Cart is Empty</p>
-                </div>
-            </div>
-            <!-- Cart Box End -->
+  <!-- Remix-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
 
-        </div>
+  <!-- Google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        <div class="mobile-open-btn">
-            <i class="uil uil-align-right"></i>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="header">
 
-    <!-- Hero Section -->
-     <main class="hero-section">
-        <div>
-        <h1 class="fs-200 fs-poppins">Build. Solder. Create. 
-            <span class="big block lineheight fs-200 bold-900 fs-poppins">Spark Your Journey</span>
-            <span class="text-white uppercase lineheight2 bold-bolder fs-poppins fs-900">Learn Soldering</span></h1>
-            <img src="assets/learnsoldering.com.svg" alt="Hero">
+    <div class="alert">
+      <div class="container">
+        <span class="alert-text">Get additional 5% off on Prepaid orders | Code: <b>LSKIT</b> <a href="https://learnsoldering.com/" target="_blank"><u>Shop Now</u></a> </span>
+      </div>
     </div>
-    <div class="hero-inner flex">
-        <div>
-            <button class="large-btn bg-red text-white fs-poppins fs-50">Shop Now</button>
-        </div>
-        <div class="hero-info">
-            <h4 class="fs-montserrat">Description</h4>
-            <p class="fs-montserrat">Whether you're a student, hobbyist, or future engineer, our <span>Learn Soldering</span> Kits make it easy to dive into electronics. No experience needed—just 30 minutes to complete your first working project.</p>
-            </div>
-        </div>
-    </main>
 
-  </body>
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search Product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="/home.html" class="logo">
+          <img src="assets/logo.svg" width="358" height="52" alt="Learn Soldering.com">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-actions-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-actions-btn" aria-label="favourite-item">
+            <ion-icon name="bookmark-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+
+          <button class="header-actions-btn" aria-label="cart-item">
+            <data value="0" class="btn-text">&#8377;0.00</data>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a href="/home.html" class="navbar-link has-after">Home</a></li>
+            <li><a href="/shop.html" class="navbar-link has-after">Shop</a></li>
+            <li><a href="/about-us.html" class="navbar-link has-after">About Us</a></li>
+            <li><a href="/blog.html" class="navbar-link has-after">Blog</a></li>
+            <li><a href="/contact-us.html" class="navbar-link has-after">Contact Us</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Mobile Navbar -->
+   <div class="slidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#home" class="logo">
+          <img src="assets/logo.svg" width="179" height="26" alt="Learn Soldering.com">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+        <li><a href="/home.html" class="navbar-link" data-nav-link>Home</a></li>
+        <li><a href="/shop.html" class="navbar-link" data-nav-link>Shop</a></li>
+        <li><a href="/about-us.html" class="navbar-link" data-nav-link>About Us</a></li>
+        <li><a href="/blog.html" class="navbar-link" data-nav-link>Blog</a></li>
+        <li><a href="/contact-us.html" class="navbar-link" data-nav-link>Contact Us</a></li>
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+   </div>
+
+   <main>
+    <article>
+
+      <!-- Hero -->
+       <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+            
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/hero-banner-1.jpg');">
+
+                <div class="card-content">
+                  <h1 class="h1 hero-title">
+                    Build. Solder. Create.
+                  </h1>
+                  <p class="hero-text">
+                    Spark Your Journey into Electronics
+                  </p>
+
+                  <p class="price">Starting at &#8377;500</p>
+
+                  <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/hero-banner-2.jpg');">
+
+                <div class="card-content">
+                  <h1 class="h1 hero-title">
+                    Build. Solder. Create.
+                  </h1>
+                  <p class="hero-text">
+                    Spark Your Journey into Electronics
+                  </p>
+
+                  <p class="price">Starting at &#8377;500</p>
+
+                  <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/hero-banner-3.jpg');">
+
+                <div class="card-content">
+                  <h1 class="h1 hero-title">
+                    Build. Solder. Create.
+                  </h1>
+                  <p class="hero-text">
+                    Spark Your Journey into Electronics
+                  </p>
+
+                  <p class="price">Starting at &#8377;500</p>
+
+                  <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+       </section>
+
+       <!-- Collection -->
+
+
+    </article>
+   </main>
+
+
+
+  <!-- Custom Js -->
+   <script src="script.js"></script>
+
+  <!-- Ionicon -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
 </html>
