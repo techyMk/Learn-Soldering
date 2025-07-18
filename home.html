@@ -1,154 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glowing - Reveal The Beauty of Skin</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="assets/learnsoldering-icon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- 
-    - google font link
-  -->
+  <meta name="description" content="Learn the basics of soldering with our comprehensive guide. Perfect for beginners and hobbyists.">
+  <meta name="keywords" content="soldering, electronics, DIY, hobby, guide">
+  <meta name="author" content="learnsoldering.com">
+  <link rel="canonical" href="https://www.learnsoldering.com/home.html">
+  <link rel="alternate" href="https://www.learnsoldering.com/home.html" hreflang="en">
+  <link rel="alternate" type="application/rss+xml" href="https://www.learnsoldering.com/rss.xml">
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <title>Learn Soldering - Beginner's Guide to Electronics Soldering</title>
+  <link rel="icon" href="./assets/learnsoldering-icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/logo.png">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
-
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header">
-
     <div class="alert">
       <div class="container">
-        <p class="alert-text">Get additional 5% off on Prepaid orders | Code: <b>LSKIT</b><a href="https://learnsoldering.com" target="_blank">| <u>Shop Now</u></a></p>
+        <p class="alert-text">Get additional 5% off on Prepaid orders | Code: <b>LSKIT</b><a href="/shop.html" rel="noopener noreferrer">| <u>Shop Now</u></a></p>
       </div>
     </div>
 
     <div class="header-top" data-header>
       <div class="container">
-
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <span class="line line-1"></span>
           <span class="line line-2"></span>
           <span class="line line-3"></span>
         </button>
 
-        
-
         <a href="#" class="logo">
-          <img src="./assets/logo.svg" width="358" height="" alt="Glowing">
+          <img src="./assets/logo.svg" width="180" height="60" alt="Learn Soldering Logo">
         </a>
-
-        
 
         <nav class="navbar">
           <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link has-after">Home</a>
-            </li>
-
-            <li>
-              <a href="#collection" class="navbar-link has-after">Collection</a>
-            </li>
-
-            <li>
-              <a href="/shop.html" class="navbar-link has-after">Shop</a>
-            </li>
-
-            <li>
-              <a href="#offer" class="navbar-link has-after">Offer</a>
-            </li>
-
-            <li>
-              <a href="#blog" class="navbar-link has-after">Blog</a>
-            </li>
-
+            <li><a href="/home.html" class="navbar-link has-after">Home</a></li>
+            <li><a href="#products" class="navbar-link has-after">Products</a></li>
+            <li><a href="#about" class="navbar-link has-after">About Us</a></li>
+            <li><a href="#blog" class="navbar-link has-after">Blog</a></li>
+            <li><a href="#contact" class="navbar-link has-after">Contact Us</a></li>
           </ul>
         </nav>
-
       </div>
     </div>
-
   </header>
-
-
-
-
-
-  <!-- 
-    - #MOBILE NAVBAR
-  -->
 
   <div class="sidebar">
     <div class="mobile-navbar" data-navbar>
-
       <div class="wrapper">
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+          <img src="./assets/logo.svg" width="150" height="50" alt="Learn Soldering Logo">
         </a>
-
         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
       </div>
-
       <ul class="navbar-list">
-
-        <li>
-          <a href="#home" class="navbar-link" data-nav-link>Home</a>
-        </li>
-
-        <li>
-          <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
-        </li>
-
-        <li>
-          <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
-        </li>
-
-        <li>
-          <a href="#offer" class="navbar-link" data-nav-link>Offer</a>
-        </li>
-
-        <li>
-          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-        </li>
-
+        <li><a href="/home.html" class="navbar-link" data-nav-link>Home</a></li>
+        <li><a href="#products" class="navbar-link" data-nav-link>Products</a></li>
+        <li><a href="#about" class="navbar-link" data-nav-link>About Us</a></li>
+        <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+        <li><a href="#contact" class="navbar-link" data-nav-link>Contact Us</a></li>
       </ul>
-
     </div>
-
     <div class="overlay" data-nav-toggler data-overlay></div>
   </div>
-
-
-
-
 
   <main>
     <article>
@@ -158,179 +84,112 @@
       -->
 
       <section class="section hero" id="home" aria-label="hero" data-section>
-        <div class="container">
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
-
-                <div class="card-content">
-
-                  <h1 class="h1 hero-title">
-                    Reveal The <br>
-                    Beauty of Skin
-                  </h1>
-
-                  <p class="hero-text">
-                    Made using clean, non-toxic ingredients, our products are designed for everyone.
-                  </p>
-
-                  <p class="price">Starting at $7.99</p>
-
-                  <a href="#" class="btn btn-primary">Shop Now</a>
-
-                </div>
-
-              </div>
-            </li>
-          </ul>
-
+  <div class="container">
+    <ul class="has-scrollbar">
+      <li class="scrollbar-item">
+        <div class="hero-card">
+          <div class="card-content">
+            <h1 class="h1 hero-title">
+              Master The Art <br>
+              of Soldering
+            </h1>
+            <p class="hero-text">
+              Learn soldering techniques with our beginner-friendly kits and tutorials. Perfect for electronics enthusiasts.
+            </p>
+            <p class="price">Starting at $19.99</p>
+            <a href="#products" class="btn btn-primary">Shop Kits</a>
+          </div>
+          <img src="./assets/images/hero-banner.png" alt="Hero Banner" class="hero-image">
         </div>
-      </section>
+      </li>
+    </ul>
+  </div>
+</section>
 
-
-
-
-
+      
       <!-- 
-        - #COLLECTION
-      -->
-
-      <section class="section collection" id="collection" aria-label="collection" data-section>
-        <div class="container">
-
-          <ul class="collection-list">
-
+        - #PRODUCTS
+        -->
+        
+        <section class="section collection" id="products" aria-label="collection" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">Our Products</h2>
+            <ul class="collection-list">
             <li>
               <div class="collection-card has-before hover:shine">
-
-                <h2 class="h2 card-title">Summer Collection</h2>
-
-                <p class="card-text">Starting at $17.99</p>
-
-                <a href="#" class="btn-link">
+                <h2 class="h2 card-title">Starter Kits</h2>
+                <p class="card-text">Begin with confidence</p>
+                <a href="/shop.html" class="btn-link">
                   <span class="span">Shop Now</span>
-
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
-
                 <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
-
               </div>
             </li>
-
             <li>
               <div class="collection-card has-before hover:shine">
-
-                <h2 class="h2 card-title">What’s New?</h2>
-
-                <p class="card-text">Get the glow</p>
-
-                <a href="#" class="btn-link">
+                <h2 class="h2 card-title">Tools</h2>
+                <p class="card-text">Quality soldering tools</p>
+                <a href="/shop.html" class="btn-link">
                   <span class="span">Discover Now</span>
-
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
-
                 <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
-
               </div>
             </li>
-
             <li>
               <div class="collection-card has-before hover:shine">
-
-                <h2 class="h2 card-title">Buy 1 Get 1</h2>
-
-                <p class="card-text">Starting at $7.99</p>
-
-                <a href="#" class="btn-link">
-                  <span class="span">Discover Now</span>
-
+                <h2 class="h2 card-title">Accessories</h2>
+                <p class="card-text">Essential soldering supplies</p>
+                <a href="/shop.html" class="btn-link">
+                  <span class="span">Browse Now</span>
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
-
                 <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpg')"></div>
-
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
-
-
-
-
-
 
       <!-- 
-        - #FEATURE
+        - #ABOUT US
       -->
 
-      <section class="section feature" aria-label="feature" data-section>
+      <section class="section feature" aria-label="feature" data-section id="about">
         <div class="container">
-
-          <h2 class="h2-large section-title">Why Shop with Glowing?</h2>
-
+          <h2 class="h2-large section-title">Why Choose Our Soldering Kits?</h2>
           <ul class="flex-list">
-
             <li class="flex-item">
               <div class="feature-card">
-
-                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
-                  class="card-icon">
-
-                <h3 class="h3 card-title">Guaranteed PURE</h3>
-
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Quality Components" class="card-icon">
+                <h3 class="h3 card-title">Quality Components</h3>
                 <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
+                  All our kits use high-quality, durable components ensure reliable performance & long-lasting results.
                 </p>
-
               </div>
             </li>
-
             <li class="flex-item">
               <div class="feature-card">
-
-                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
-                  alt="Completely Cruelty-Free" class="card-icon">
-
-                <h3 class="h3 card-title">Completely Cruelty-Free</h3>
-
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy" alt="Beginner Friendly" class="card-icon">
+                <h3 class="h3 card-title">Beginner Friendly</h3>
                 <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
+                  Designed with beginners in mind, our kits include detailed instructions and all necessary components.
                 </p>
-
               </div>
             </li>
-
             <li class="flex-item">
               <div class="feature-card">
-
-                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
-                  alt="Ingredient Sourcing" class="card-icon">
-
-                <h3 class="h3 card-title">Ingredient Sourcing</h3>
-
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy" alt="Safety First" class="card-icon">
+                <h3 class="h3 card-title">Safety First</h3>
                 <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
+                  All kits include safety equipment and our tools meet the strict safety standards for worry-free soldering.
                 </p>
-
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
-
-
 
       <!-- 
         - #BLOG
@@ -338,76 +197,51 @@
 
       <section class="section blog" id="blog" aria-label="blog" data-section>
         <div class="container">
-
           <h2 class="h2-large section-title">More to Discover</h2>
-
           <ul class="flex-list">
-
             <li class="flex-item">
               <div class="blog-card">
-
                 <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
-                  <img src="./assets/images/blog-1.jpg" width="700" height="450" loading="lazy" alt="Find a Store"
-                    class="img-cover">
+                  <img src="./assets/images/blog-1.jpg" width="700" height="450" loading="lazy" alt="Soldering Tutorials" class="img-cover">
                 </figure>
-
                 <h3 class="h3">
-                  <a href="#" class="card-title">Find a Store</a>
+                  <a href="#" class="card-title">Tutorials & Guides</a>
                 </h3>
-
                 <a href="#" class="btn-link">
-                  <span class="span">Our Store</span>
-
+                  <span class="span">Learn More</span>
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
-
               </div>
             </li>
-
             <li class="flex-item">
               <div class="blog-card">
-
                 <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
-                  <img src="./assets/images/blog-2.jpg" width="700" height="450" loading="lazy" alt="From Our Blog"
-                    class="img-cover">
+                  <img src="./assets/images/blog-2.jpg" width="700" height="450" loading="lazy" alt="Project Ideas" class="img-cover">
                 </figure>
-
                 <h3 class="h3">
-                  <a href="#" class="card-title">From Our Blog</a>
+                  <a href="#" class="card-title">Project Ideas</a>
                 </h3>
-
                 <a href="#" class="btn-link">
-                  <span class="span">Our Store</span>
-
+                  <span class="span">Get Inspired</span>
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
-
               </div>
             </li>
-
             <li class="flex-item">
               <div class="blog-card">
-
                 <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
-                  <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy" alt="Our Story"
-                    class="img-cover">
+                  <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy" alt="Our Story" class="img-cover">
                 </figure>
-
                 <h3 class="h3">
                   <a href="#" class="card-title">Our Story</a>
                 </h3>
-
                 <a href="#" class="btn-link">
-                  <span class="span">Our Store</span>
-
+                  <span class="span">About Us</span>
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
-
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
 
@@ -415,185 +249,121 @@
   </main>
 
 
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer" data-section>
+  <footer class="footer" data-section id="contact">
     <div class="container">
-
       <div class="footer-top">
-
         <ul class="footer-list">
-
           <li>
             <p class="footer-list-title">Company</p>
           </li>
-
           <li>
             <p class="footer-list-text">
               Find a location nearest you. See <a href="#" class="link">Our Stores</a>
             </p>
           </li>
-
           <li>
-            <p class="footer-list-text bold">+91 1234567890</p>
+            <p class="footer-list-text bold">+91 123-4567-890</p>
           </li>
-
           <li>
             <p class="footer-list-text">info@learnsoldering.com</p>
           </li>
-
         </ul>
 
         <ul class="footer-list">
-
           <li>
             <p class="footer-list-title">Useful links</p>
           </li>
-
           <li>
-            <a href="#" class="footer-link">New Products</a>
+            <a href="#products" class="footer-link">New Products</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Best Sellers</a>
+            <a href="#products" class="footer-link">Best Sellers</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Bundle & Save</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Online Gift Card</a>
+            <a href="#" class="footer-link">Gift Cards</a>
           </li>
-
         </ul>
 
         <ul class="footer-list">
-
           <li>
-            <p class="footer-list-title">Infomation</p>
+            <p class="footer-list-title">Information</p>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Start a Return</a>
+            <a href="#" class="footer-link">Returns Policy</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#contact" class="footer-link">Contact Us</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Shipping FAQ</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Terms & Conditions</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Privacy Policy</a>
           </li>
-
         </ul>
 
         <div class="footer-list">
-
-          <p class="newsletter-title">Good emails.</p>
-
+          <p class="newsletter-title">Stay Updated</p>
           <p class="newsletter-text">
-            Enter your email below to be the first to know about new collections and product launches.
+            Subscribe to get news about new products and special offers.
           </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Enter your email address" required
-              class="email-field">
-
+          <form action="#" method="post" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required class="email-field">
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
-
         </div>
-
       </div>
 
       <div class="footer-bottom">
-
         <div class="wrapper">
           <p class="copyright">
-            &copy; 2025 Learn Soldering
+            &copy; 2025 Learn Soldering.
           </p>
-
           <ul class="social-list">
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Twitter">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Facebook">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Instagram">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="YouTube">
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
-
           </ul>
         </div>
 
         <a href="#" class="logo">
-          <img src="./assets/logo.svg" width="179" height="26" loading="lazy" alt="Glowing">
+          <img src="./assets/logo.svg" width="179" height="26" loading="lazy" alt="Learn Soldering Logo">
         </a>
 
-        <img src="./assets/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
-
+        <img src="./assets/pay.png" width="313" height="28" alt="Accepted payment methods" class="w-100">
       </div>
-
     </div>
   </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
 
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
   </a>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
   <script src="script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
