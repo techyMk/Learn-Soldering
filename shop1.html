@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- icon -->
+
+    <!-- Google fonts End -->
+
+    <!-- custon style Sheet & JavaScript -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Learn Soldering</title>
+    <link rel="icon" href="assets/learnsoldering-icon.svg">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Get additional 5% off on Prepaid orders | Code: <b>LSKIT</b><a href="/shop.html">| <u>Shop Now</u></a></p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        
+
+        <a href="#" class="logo">
+          <img src="./assets/logo.svg" width="358" height="" alt="Glowing">
+        </a>
+
+        
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="/home.html" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#products" class="navbar-link has-after">Products</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link has-after">About Us</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link has-after">Contact Us</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/logo.svg" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="/home.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="#products" class="navbar-link" data-nav-link>Products</a>
+        </li>
+
+        <li>
+          <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+        <li>
+          <a href="#contacts" class="navbar-link" data-nav-link>Contact Us</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/portfolio1.png" width="100%" alt="Main Product Image" id="productImg">
+                
+                <div class="small-img-container">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="assets/portfolio2.png" alt="Kit 1" class="small-img active" 
+                                 data-desc="Basic soldering kit with iron, solder, and tools">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/portfolio3.png" alt="Kit 2" class="small-img" 
+                                 data-desc="Advanced kit with multimeter and helping hands">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/portfolio4.png" alt="Kit 3" class="small-img" 
+                                 data-desc="Professional kit with temperature-controlled iron">
+                        </div>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="assets/portfolio5.png" alt="Kit 4" class="small-img" 
+                                 data-desc="Beginner's package with practice boards">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/portfolio6.png" alt="Kit 5" class="small-img" 
+                                 data-desc="Portable kit for field repairs">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/portfolio7.png" alt="Kit 6" class="small-img" 
+                                 data-desc="Complete workstation with all accessories">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Products</p>
+                <h1>Kits by Learn Soldering</h1>
+                <h4>$49.99</h4>
+                <button><a href="#" class="btn">Buy Now</a></button>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <p id="productDescription">Basic soldering kit with iron, solder, and tools</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productImg = document.getElementById("productImg");
+            const smallImgs = document.querySelectorAll(".small-img");
+            const productDesc = document.getElementById("productDescription");
+            
+            smallImgs.forEach(img => {
+                img.addEventListener('click', function() {
+                    // Store current main image values
+                    const currentMainSrc = productImg.src;
+                    const currentMainAlt = productImg.alt;
+                    const currentMainDesc = productDesc.textContent;
+                    
+                    // Get clicked thumbnail values
+                    const clickedSrc = this.src;
+                    const clickedAlt = this.alt;
+                    const clickedDesc = this.dataset.desc;
+                    
+                    // Swap images
+                    productImg.src = clickedSrc;
+                    productImg.alt = clickedAlt;
+                    this.src = currentMainSrc;
+                    this.alt = currentMainAlt;
+                    
+                    // Update descriptions
+                    productDesc.textContent = clickedDesc;
+                    this.dataset.desc = currentMainDesc;
+                    
+                    // Update active state
+                    smallImgs.forEach(img => img.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+  
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section id="contact">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+91 1234567890</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">info@learnsoldering.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Products</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Gift Card</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Stay Updated</p>
+
+          <p class="newsletter-text">
+            Subscribe to get news about new products and special offers.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2025 Learn Soldering
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/logo.svg" width="179" height="26" loading="lazy" alt="Glowing">
+        </a>
+
+        <img src="./assets/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

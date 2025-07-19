@@ -1,408 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <!-- icon -->
-
-    <!-- Google fonts End -->
-
-    <!-- custon style Sheet & JavaScript -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Learn Soldering</title>
-    <link rel="icon" href="assets/learnsoldering-icon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Soldering Kits</title>
+  <link rel="icon" href="assets/learnsoldering-icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Load Urbanist from Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
 </head>
+<body>
 
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header">
-
-    <div class="alert">
+    <header class="header">
+    <!-- <div class="alert">
       <div class="container">
-        <p class="alert-text">Get additional 5% off on Prepaid orders | Code: <b>LSKIT</b><a href="/shop.html">| <u>Shop Now</u></a></p>
+        <p class="alert-text">Get additional 5% off on Prepaid orders | Code: <b>LSKIT</b><a href="/shop.html" rel="noopener noreferrer">| <u>Shop Now</u></a></p>
       </div>
-    </div>
+    </div> -->
 
     <div class="header-top" data-header>
       <div class="container">
-
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <span class="line line-1"></span>
           <span class="line line-2"></span>
           <span class="line line-3"></span>
         </button>
 
-        
-
         <a href="#" class="logo">
-          <img src="./assets/logo.svg" width="358" height="" alt="Glowing">
+          <img src="./assets/logo.svg" width="180" height="60" alt="Learn Soldering Logo">
         </a>
-
-        
 
         <nav class="navbar">
           <ul class="navbar-list">
-
-            <li>
-              <a href="/home.html" class="navbar-link has-after">Home</a>
-            </li>
-
-            <li>
-              <a href="#products" class="navbar-link has-after">Products</a>
-            </li>
-
-            <li>
-              <a href="#about" class="navbar-link has-after">About Us</a>
-            </li>
-
-            <li>
-              <a href="#blog" class="navbar-link has-after">Blog</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link has-after">Contact Us</a>
-            </li>
-
+            <li><a href="/home.html" class="navbar-link has-after">Home</a></li>
+            <li><a href="#products" class="navbar-link has-after">Products</a></li>
+            <li><a href="#about" class="navbar-link has-after">About Us</a></li>
+            <li><a href="#blog" class="navbar-link has-after">Blog</a></li>
+            <li><a href="#contact" class="navbar-link has-after">Contact Us</a></li>
           </ul>
         </nav>
-
       </div>
     </div>
-
   </header>
-
-
-
-
-
-  <!-- 
-    - #MOBILE NAVBAR
-  -->
 
   <div class="sidebar">
     <div class="mobile-navbar" data-navbar>
-
       <div class="wrapper">
         <a href="#" class="logo">
-          <img src="./assets/logo.svg" width="179" height="26" alt="Glowing">
+          <img src="./assets/logo.svg" width="150" height="50" alt="Learn Soldering Logo">
         </a>
-
         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
       </div>
-
       <ul class="navbar-list">
-
-        <li>
-          <a href="/home.html" class="navbar-link" data-nav-link>Home</a>
-        </li>
-
-        <li>
-          <a href="#products" class="navbar-link" data-nav-link>Products</a>
-        </li>
-
-        <li>
-          <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-        </li>
-
-        <li>
-          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-        </li>
-
-        <li>
-          <a href="#contacts" class="navbar-link" data-nav-link>Contact Us</a>
-        </li>
-
+        <li><a href="/home.html" class="navbar-link" data-nav-link>Home</a></li>
+        <li><a href="#products" class="navbar-link" data-nav-link>Products</a></li>
+        <li><a href="#about" class="navbar-link" data-nav-link>About Us</a></li>
+        <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+        <li><a href="#contact" class="navbar-link" data-nav-link>Contact Us</a></li>
       </ul>
-
     </div>
-
     <div class="overlay" data-nav-toggler data-overlay></div>
   </div>
-
-    <div class="small-container single-product">
-        <div class="row">
-            <div class="col-2">
-                <img src="assets/portfolio1.png" width="100%" alt="Main Product Image" id="productImg">
-                
-                <div class="small-img-container">
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <img src="assets/portfolio2.png" alt="Kit 1" class="small-img active" 
-                                 data-desc="Basic soldering kit with iron, solder, and tools">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="assets/portfolio3.png" alt="Kit 2" class="small-img" 
-                                 data-desc="Advanced kit with multimeter and helping hands">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="assets/portfolio4.png" alt="Kit 3" class="small-img" 
-                                 data-desc="Professional kit with temperature-controlled iron">
-                        </div>
-                    </div>
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <img src="assets/portfolio5.png" alt="Kit 4" class="small-img" 
-                                 data-desc="Beginner's package with practice boards">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="assets/portfolio6.png" alt="Kit 5" class="small-img" 
-                                 data-desc="Portable kit for field repairs">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="assets/portfolio7.png" alt="Kit 6" class="small-img" 
-                                 data-desc="Complete workstation with all accessories">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <p>Home / Products</p>
-                <h1>Kits by Learn Soldering</h1>
-                <h4>$49.99</h4>
-                <button><a href="#" class="btn">Buy Now</a></button>
-                <h3>Product Details <i class="fa fa-indent"></i></h3>
-                <p id="productDescription">Basic soldering kit with iron, solder, and tools</p>
-            </div>
-        </div>
+  <!-- Shop Hero Section -->
+  <section class="shop-hero">
+    <div class="hero-content">
+      <h1>Learn Soldering Kits</h1>
+      <p>Premium quality soldering kits for beginners and professionals</p>
+      <p class="price">Starting at &#8377;3000</p>
+      <div class="btn-container">
+        <a href="#components" class="btn explore">Explore Components</a>
+      </div>
     </div>
+  </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const productImg = document.getElementById("productImg");
-            const smallImgs = document.querySelectorAll(".small-img");
-            const productDesc = document.getElementById("productDescription");
+  <!-- Main Product Section -->
+  <section class="main-product container reveal">
+    <div class="product-row">
+      <div class="product-image">
+        <img src="assets/images/hero-banner.png" alt="Complete Soldering Kit">
+      </div>
+      <div class="product-details">
+        <h1>Learn Soldering Kit</h1>
+        <p class="product-price">&#8377;3000</p>
+        <a href="#" class="btn">Buy Now</a>
+        <h3>Kit Includes:</h3>
+        <ul class="kit-contents">
+          <li>Ohms Law Rocket</li>
+          <li>Push Button Rocket</li>
+          <li>Robot 1</li>
+          <li>Robot 2</li>
+          <li>Rocket 3 Organ Music Instrument</li>
+          <li>Shake Toy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Component Sections -->
+  <section id="components" class="container">
+    <!-- Soldering Iron -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 1</h2>
+      <div class="component-row">
+        <!-- <div class="component-images">
+          <img src="assets/images/ohms-2d.jpg" alt="Soldering Iron" class="main-component-image" id="iron-main">
+          <div class="thumbnail-container">
+            <img src="assets/images/ohms-3d.jpg" class="thumbnail active" alt="Iron Front" data-target="iron-main">
+            <img src="assets/images/ohms-circuit.jpg" class="thumbnail" alt="Iron Side" data-target="iron-main">
+            <video class="thumbnail" preload="metadata" data-target="iron-main" width="100">
+                <source src="assets/images/ohms-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+          </div>
+        </div> -->
+        <style>
+   
+    .product-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    @media (min-width: 992px) {
+      .product-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    /* Gallery Styles */
+    .product-gallery {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .main-display {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f9f9f9;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .main-display-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .main-display img,
+    .main-display video {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+    }
+    
+    .main-display video {
+      background-color: #000;
+    }
+    
+    .thumbnail-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+    
+    @media (max-width: 768px) {
+      .thumbnail-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .thumbnail-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .thumbnail {
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      aspect-ratio: 1/1;
+      width: 100%;
+    }
+    
+    .thumbnail:hover {
+      opacity: 0.8;
+    }
+    
+    .thumbnail.active {
+      border-color: var(--hoockers-green);
+    }
+    
+    .thumbnail img,
+    .thumbnail video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .thumbnail video {
+      pointer-events: none;
+    }
+    
+    .thumbnail-label {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--black);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <section class="product-gallery">
+    <!-- Main display - shows the currently selected media -->
+    <div class="main-display">
+      <img src="assets/images/ohms-2d.jpg" alt="Ohms Law Rocket" id="main-display">
+    </div>
+    
+    <!-- Thumbnail grid -->
+    <div class="thumbnail-grid">
+        <div class="thumbnail-item">
+          <div class="thumbnail active" data-src="assets/images/ohms-2d.jpg" data-type="image">
+            <img src="assets/images/ohms-2d.jpg" alt="2D Design">
+          </div>
+          <span class="thumbnail-label">2D Image</span>
+        </div>
+        
+        <div class="thumbnail-item">
+          <div class="thumbnail" data-src="assets/images/ohms-3d.jpg" data-type="image">
+            <img src="assets/images/ohms-3d.jpg" alt="3D Model">
+          </div>
+          <span class="thumbnail-label">3D Image</span>
+        </div>
+        
+        <div class="thumbnail-item">
+          <div class="thumbnail" data-src="assets/images/ohms-circuit.jpg" data-type="image">
+            <img src="assets/images/ohms-circuit.jpg" alt="Circuit Diagram">
+          </div>
+          <span class="thumbnail-label">Circuit Diagram</span>
+        </div>
+        
+        <div class="thumbnail-item">
+          <div class="thumbnail" data-src="assets/images/ohms-video.mp4" data-type="video">
+            <video muted loop>
+              <source src="assets/images/ohms-video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <span class="thumbnail-label">Video</span>
+        </div>
+      </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      const mainDisplay = document.getElementById('main-display');
+      const mainDisplayContainer = document.querySelector('.main-display');
+      
+      thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+          // Remove active class from all thumbnails
+          thumbnails.forEach(t => t.classList.remove('active'));
+          
+          // Add active class to clicked thumbnail
+          this.classList.add('active');
+          
+          const src = this.getAttribute('data-src');
+          const type = this.getAttribute('data-type');
+          
+          if (type === 'video') {
+            // Replace with video
+            const video = document.createElement('video');
+            video.src = src;
+            video.controls = true;
+            video.autoplay = true;
+            video.id = 'main-display';
             
-            smallImgs.forEach(img => {
-                img.addEventListener('click', function() {
-                    // Store current main image values
-                    const currentMainSrc = productImg.src;
-                    const currentMainAlt = productImg.alt;
-                    const currentMainDesc = productDesc.textContent;
-                    
-                    // Get clicked thumbnail values
-                    const clickedSrc = this.src;
-                    const clickedAlt = this.alt;
-                    const clickedDesc = this.dataset.desc;
-                    
-                    // Swap images
-                    productImg.src = clickedSrc;
-                    productImg.alt = clickedAlt;
-                    this.src = currentMainSrc;
-                    this.alt = currentMainAlt;
-                    
-                    // Update descriptions
-                    productDesc.textContent = clickedDesc;
-                    this.dataset.desc = currentMainDesc;
-                    
-                    // Update active state
-                    smallImgs.forEach(img => img.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
+            mainDisplayContainer.innerHTML = '';
+            mainDisplayContainer.appendChild(video);
+          } else {
+            // Replace with image
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = this.querySelector('img').alt;
+            img.id = 'main-display';
+            
+            mainDisplayContainer.innerHTML = '';
+            mainDisplayContainer.appendChild(img);
+          }
         });
-    </script>
-</body>
-</html>
+        
+        // Auto-play video thumbnails on hover
+        const videoThumbnails = thumbnail.querySelector('video');
+        if (videoThumbnails) {
+          thumbnail.addEventListener('mouseenter', () => {
+            videoThumbnails.play();
+          });
+          
+          thumbnail.addEventListener('mouseleave', () => {
+            videoThumbnails.pause();
+            videoThumbnails.currentTime = 0;
+          });
+        }
+      });
+    });
+
+    
+  </script>
 
   
+        <div class="component-info">
+          <h3 class="title">Ohms Law Rocket</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Hands-on introduction to Ohm's Law</li>
+            <li>No prior soldering experience needed</li>
+            <li>LED lighting effects when completed</li>
+            <li>Includes all necessary components</li>
+            <li>Detailed instruction manual</li>
+            <li>Teaches basic circuit concepts</li>
+            <li>Great STEM learning tool</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- Digital Multimeter -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 2</h2>
+      <div class="component-row">
+          <div class="component-images">
+              <img src="assets/portfolio3.png" alt="Digital Multimeter" class="main-component-image" id="multimeter-main">
+              <div class="thumbnail-container">
+            <img src="assets/portfolio3.png" class="thumbnail active" alt="Multimeter Front" data-target="multimeter-main">
+            <img src="assets/portfolio3-1.png" class="thumbnail" alt="Multimeter Back" data-target="multimeter-main">
+            <img src="assets/portfolio3-2.png" class="thumbnail" alt="Multimeter Probes" data-target="multimeter-main">
+        </div>
+        </div>
+        <div class="component-info">
+          <h3 class="title">Push Button Rocket</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+              <li>Auto-ranging capability</li>
+            <li>Measures voltage, current, resistance</li>
+            <li>Diode and continuity testing</li>
+            <li>LCD backlit display</li>
+            <li>Includes test leads and case</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Solder Wire -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 3</h2>
+      <div class="component-row">
+          <div class="component-images">
+              <img src="assets/portfolio4.png" alt="Solder Wire" class="main-component-image" id="solder-main">
+          <div class="thumbnail-container">
+            <img src="assets/portfolio4.png" class="thumbnail active" alt="Solder Spool" data-target="solder-main">
+            <img src="assets/portfolio4-1.png" class="thumbnail" alt="Solder Closeup" data-target="solder-main">
+            <img src="assets/portfolio4-2.png" class="thumbnail" alt="Solder Packaging" data-target="solder-main">
+        </div>
+        </div>
+        <div class="component-info">
+          <h3 class="title">Robot 1</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+              <li>0.8mm diameter, 50g spool</li>
+            <li>Rosin core flux</li>
+            <li>Melting point: 217°C</li>
+            <li>Excellent wetting properties</li>
+            <li>Compliant with RoHS standards</li>
+          </ul>
+        </div>
+    </div>
+</div>
 
-  <!-- 
-    - #FOOTER
-  -->
+<!-- Helping Hands -->
+<div class="component-section reveal">
+    <h2 class="h2-large section-title">Component 4</h2>
+    <div class="component-row">
+        <div class="component-images">
+            <img src="assets/portfolio5.png" alt="Helping Hands" class="main-component-image" id="hands-main">
+          <div class="thumbnail-container">
+              <img src="assets/portfolio5.png" class="thumbnail active" alt="Helping Hands Front" data-target="hands-main">
+            <img src="assets/portfolio5-1.png" class="thumbnail" alt="Helping Hands Side" data-target="hands-main">
+            <img src="assets/portfolio5-2.png" class="thumbnail" alt="Helping Hands Magnifier" data-target="hands-main">
+          </div>
+        </div>
+        <div class="component-info">
+            <h3 class="title">Robot 2</h3>
+            <h3>Features:</h3>
+            <ul class="component-features">
+            <li>Two adjustable alligator clips</li>
+            <li>3x magnifying glass</li>
+            <li>Weighted base for stability</li>
+            <li>360° rotating arms</li>
+            <li>Rubber-coated clips</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desoldering Pump -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 5</h2>
+      <div class="component-row">
+          <div class="component-images">
+              <img src="assets/portfolio6.png" alt="Desoldering Pump" class="main-component-image" id="pump-main">
+          <div class="thumbnail-container">
+            <img src="assets/portfolio6.png" class="thumbnail active" alt="Pump Front" data-target="pump-main">
+            <img src="assets/portfolio6-1.png" class="thumbnail" alt="Pump Side" data-target="pump-main">
+            <img src="assets/portfolio6-2.png" class="thumbnail" alt="Pump Nozzle" data-target="pump-main">
+          </div>
+        </div>
+        <div class="component-info">
+          <h3 class="title">Rocket 3 Organ Music Instrument</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Spring-loaded suction</li>
+            <li>Heat-resistant silicone nozzle</li>
+            <li>Aluminum barrel</li>
+            <li>One-handed operation</li>
+            <li>Cleaning needle included</li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tool Set -->
+<div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 6</h2>
+      <div class="component-row">
+          <div class="component-images">
+              <img src="assets/portfolio7.png" alt="Tool Set" class="main-component-image" id="tools-main">
+          <div class="thumbnail-container">
+              <img src="assets/portfolio7.png" class="thumbnail active" alt="Tool Set Overview" data-target="tools-main">
+            <img src="assets/portfolio7-1.png" class="thumbnail" alt="Precision Screwdrivers" data-target="tools-main">
+            <img src="assets/portfolio7-2.png" class="thumbnail" alt="Tweezers" data-target="tools-main">
+        </div>
+        </div>
+        <div class="component-info">
+            <h3 class="title">Shake Toy</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>6 precision screwdrivers</li>
+            <li>Anti-static tweezers</li>
+            <li>Wire cutters</li>
+            <li>Needle-nose pliers</li>
+            <li>Storage case</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Image Swapping Functionality
+        document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+          const targetId = this.getAttribute('data-target');
+          const mainImage = document.getElementById(targetId);
+          
+          // Get current active thumbnail in this container
+          const container = this.closest('.thumbnail-container');
+          const currentActive = container.querySelector('.thumbnail.active');
+          
+          // Swap images
+          const tempSrc = mainImage.src;
+          const tempAlt = mainImage.alt;
+          
+          mainImage.src = this.src;
+          mainImage.alt = this.alt;
+          
+          this.src = tempSrc;
+          this.alt = tempAlt;
+          
+          // Update active states
+          currentActive.classList.remove('active');
+          this.classList.add('active');
+        });
+      });
+
+      // Scroll Reveal Animation
+      ScrollReveal().reveal('.reveal', {
+        delay: 200,
+        distance: '30px',
+        duration: 1000,
+        easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        interval: 200,
+        reset: true
+      });
+
+      // Fallback for ScrollReveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {threshold: 0.1});
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
 
   <footer class="footer" data-section id="contact">
     <div class="container">
-
       <div class="footer-top">
-
         <ul class="footer-list">
-
           <li>
             <p class="footer-list-title">Company</p>
           </li>
-
           <li>
             <p class="footer-list-text">
               Find a location nearest you. See <a href="#" class="link">Our Stores</a>
             </p>
           </li>
-
           <li>
             <p class="footer-list-text bold">+91 1234567890</p>
           </li>
-
           <li>
             <p class="footer-list-text">info@learnsoldering.com</p>
           </li>
-
         </ul>
 
         <ul class="footer-list">
-
           <li>
             <p class="footer-list-title">Useful links</p>
           </li>
-
           <li>
-            <a href="#" class="footer-link">New Products</a>
+            <a href="#products" class="footer-link">New Products</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Best Sellers</a>
+            <a href="#products" class="footer-link">Best Sellers</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Bundle & Save</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Online Gift Card</a>
+            <a href="#" class="footer-link">Gift Cards</a>
           </li>
-
         </ul>
 
         <ul class="footer-list">
-
           <li>
-            <p class="footer-list-title">Infomation</p>
+            <p class="footer-list-title">Information</p>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Start a Return</a>
+            <a href="#" class="footer-link">Returns Policy</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#contact" class="footer-link">Contact Us</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Shipping FAQ</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Terms & Conditions</a>
           </li>
-
           <li>
             <a href="#" class="footer-link">Privacy Policy</a>
           </li>
-
         </ul>
 
         <div class="footer-list">
-
-          <p class="newsletter-title">Good emails.</p>
-
+          <p class="newsletter-title">Stay Updated</p>
           <p class="newsletter-text">
-            Enter your email below to be the first to know about new collections and product launches.
+            Subscribe to get news about new products and special offers.
           </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Enter your email address" required
-              class="email-field">
-
+          <form action="#" method="post" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required class="email-field">
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
-
         </div>
-
       </div>
 
       <div class="footer-bottom">
-
         <div class="wrapper">
           <p class="copyright">
-            &copy; 2025 Learn Soldering
+            &copy; 2025 Learn Soldering.
           </p>
-
           <ul class="social-list">
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Twitter">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Facebook">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Instagram">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
-
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="YouTube">
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
-
           </ul>
         </div>
 
         <a href="#" class="logo">
-          <img src="./assets/logo.svg" width="179" height="26" loading="lazy" alt="Glowing">
+          <img src="./assets/logo.svg" width="179" height="26" loading="lazy" alt="Learn Soldering Logo">
         </a>
 
-        <img src="./assets/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
-
+        <img src="./assets/pay.png" width="313" height="28" alt="Accepted payment methods" class="w-100">
       </div>
-
     </div>
   </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
 
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
   </a>
+  <!-- Ion Icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<!-- Custom JS -->
+<script src="./script.js"></script>
 </body>
-
 </html>
