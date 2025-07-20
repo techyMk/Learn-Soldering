@@ -2062,6 +2062,19 @@ body {
       .shop-hero h1 {
         font-size: 2.5rem;
       }
+
+      .shop-hero p {
+        font-size: 2rem;
+      }
+
+      .shop-hero .price {
+        font-size: 2.8rem;
+      }
+
+      .explore {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+      }
       
       .product-row, .component-row {
         flex-direction: column;
