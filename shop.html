@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn Soldering Kits</title>
+  <title>Learn Soldering Kits Products</title>
   <link rel="icon" href="assets/learnsoldering-icon.svg">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- Load Urbanist from Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
   
 </head>
 <body>
 
+    <!-- Header Section -->
     <header class="header">
     <!-- <div class="alert">
       <div class="container">
@@ -37,9 +38,9 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li><a href="/home.html" class="navbar-link has-after">Home</a></li>
-            <li><a href="#products" class="navbar-link has-after">Products</a></li>
-            <li><a href="#about" class="navbar-link has-after">About Us</a></li>
-            <li><a href="#blog" class="navbar-link has-after">Blog</a></li>
+            <li><a href="home.html#products" class="navbar-link has-after">Products</a></li>
+            <li><a href="home.html#about" class="navbar-link has-after">About Us</a></li>
+            <li><a href="home.html#blog" class="navbar-link has-after">Blog</a></li>
             <li><a href="#contact" class="navbar-link has-after">Contact Us</a></li>
           </ul>
         </nav>
@@ -47,6 +48,7 @@
     </div>
   </header>
 
+    <!-- Mobile Navigation Sidebar -->
   <div class="sidebar">
     <div class="mobile-navbar" data-navbar>
       <div class="wrapper">
@@ -59,14 +61,15 @@
       </div>
       <ul class="navbar-list">
         <li><a href="/home.html" class="navbar-link" data-nav-link>Home</a></li>
-        <li><a href="#products" class="navbar-link" data-nav-link>Products</a></li>
-        <li><a href="#about" class="navbar-link" data-nav-link>About Us</a></li>
-        <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+        <li><a href="home.html#products" class="navbar-link" data-nav-link>Products</a></li>
+        <li><a href="home.html#about" class="navbar-link" data-nav-link>About Us</a></li>
+        <li><a href="home.html#blog" class="navbar-link" data-nav-link>Blog</a></li>
         <li><a href="#contact" class="navbar-link" data-nav-link>Contact Us</a></li>
       </ul>
     </div>
     <div class="overlay" data-nav-toggler data-overlay></div>
   </div>
+
   <!-- Shop Hero Section -->
   <section class="shop-hero">
     <div class="hero-content">
@@ -104,24 +107,440 @@
 
   <!-- Component Sections -->
   <section id="components" class="container">
-    <!-- Soldering Iron -->
+    <!-- Component 1 - Ohms Law Rocket -->
     <div class="component-section reveal">
       <h2 class="h2-large section-title">Component 1</h2>
       <div class="component-row">
-        <!-- <div class="component-images">
-          <img src="assets/images/ohms-2d.jpg" alt="Soldering Iron" class="main-component-image" id="iron-main">
-          <div class="thumbnail-container">
-            <img src="assets/images/ohms-3d.jpg" class="thumbnail active" alt="Iron Front" data-target="iron-main">
-            <img src="assets/images/ohms-circuit.jpg" class="thumbnail" alt="Iron Side" data-target="iron-main">
-            <video class="thumbnail" preload="metadata" data-target="iron-main" width="100">
-                <source src="assets/images/ohms-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
+        <section class="product-gallery" id="gallery-ohms">
+          <div class="main-display">
+            <img src="assets/images/ohms-2d.jpg" alt="Ohms Law Rocket" id="main-display-ohms">
           </div>
-        </div> -->
-        <style>
-   
+          
+          <div class="thumbnail-grid">
+            <div class="thumbnail-item">
+              <div class="thumbnail active" data-src="assets/images/ohms-2d.jpg" data-type="image" data-target="main-display-ohms">
+                <img src="assets/images/ohms-2d.jpg" alt="2D Design">
+              </div>
+              <span class="thumbnail-label">2D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/ohms-3d.jpg" data-type="image" data-target="main-display-ohms">
+                <img src="assets/images/ohms-3d.jpg" alt="3D Model">
+              </div>
+              <span class="thumbnail-label">3D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/ohms-circuit.jpg" data-type="image" data-target="main-display-ohms">
+                <img src="assets/images/ohms-circuit.jpg" alt="Circuit Diagram">
+              </div>
+              <span class="thumbnail-label">Circuit Diagram</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/ohms-video.mp4" data-type="video" data-target="main-display-ohms">
+                <video muted>
+                  <source src="assets/images/ohms-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="thumbnail-label">Video</span>
+            </div>
+          </div>
+        </section>
+        
+        <div class="component-info">
+          <h3 class="title">Ohms Law Rocket</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Hands-on introduction to Ohm's Law</li>
+            <li>No prior soldering experience needed</li>
+            <li>LED lighting effects when completed</li>
+            <li>Includes all necessary components</li>
+            <li>Detailed instruction manual</li>
+            <li>Teaches basic circuit concepts</li>
+            <li>Great STEM learning tool</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 2 - Push Button Rocket -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 2</h2>
+      <div class="component-row">
+        <section class="product-gallery" id="gallery-push-button">
+          <div class="main-display">
+            <img src="assets/images/push-button-2d.jpg" alt="Push Button Rocket" id="main-display-push-button">
+          </div>
+          
+          <div class="thumbnail-grid">
+            <div class="thumbnail-item">
+              <div class="thumbnail active" data-src="assets/images/push-button-2d.jpg" data-type="image" data-target="main-display-push-button">
+                <img src="assets/images/push-button-2d.jpg" alt="2D Design">
+              </div>
+              <span class="thumbnail-label">2D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/push-button-3d.jpg" data-type="image" data-target="main-display-push-button">
+                <img src="assets/images/push-button-3d.jpg" alt="3D Model">
+              </div>
+              <span class="thumbnail-label">3D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/push-button-circuit.jpg" data-type="image" data-target="main-display-push-button">
+                <img src="assets/images/push-button-circuit.jpg" alt="Circuit Diagram">
+              </div>
+              <span class="thumbnail-label">Circuit Diagram</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/push-button-video.mp4" data-type="video" data-target="main-display-push-button">
+                <video muted loop>
+                  <source src="assets/images/push-button-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="thumbnail-label">Video</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="component-info">
+          <h3 class="title">Push Button Rocket</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Simple push-button activation mechanism</li>
+            <li>Demonstrates basic switch circuits</li>
+            <li>LED launch sequence when button is pressed</li>
+            <li>Includes all necessary electronic components</li>
+            <li>Step-by-step assembly guide</li>
+            <li>Teaches about momentary switches</li>
+            <li>Fun interactive project</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 3 - Robot 1 -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 3</h2>
+      <div class="component-row">
+        <section class="product-gallery" id="gallery-robot1">
+          <div class="main-display">
+            <img src="assets/images/robot1-2d.jpg" alt="Robot 1" id="main-display-robot1">
+          </div>
+          
+          <div class="thumbnail-grid">
+            <div class="thumbnail-item">
+              <div class="thumbnail active" data-src="assets/images/robot1-2d.jpg" data-type="image" data-target="main-display-robot1">
+                <img src="assets/images/robot1-2d.jpg" alt="2D Design">
+              </div>
+              <span class="thumbnail-label">2D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/robot1-3d.jpg" data-type="image" data-target="main-display-robot1">
+                <img src="assets/images/robot1-3d.jpg" alt="3D Model">
+              </div>
+              <span class="thumbnail-label">3D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/robot1-circuit.jpg" data-type="image" data-target="main-display-robot1">
+                <img src="assets/images/robot1-circuit.jpg" alt="Circuit Diagram">
+              </div>
+              <span class="thumbnail-label">Circuit Diagram</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/robot1-video.mp4" data-type="video" data-target="main-display-robot1">
+                <video muted loop>
+                  <source src="assets/images/robot1-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="thumbnail-label">Video</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="component-info">
+          <h3 class="title">Robot 1</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Basic robotic movement demonstration</li>
+            <li>Simple motor control circuit</li>
+            <li>Teaches about DC motors and power</li>
+            <li>Includes all mechanical and electronic parts</li>
+            <li>Clear assembly instructions</li>
+            <li>Customizable with additional components</li>
+            <li>Great introduction to robotics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 4 - Robot 2 -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 4</h2>
+      <div class="component-row">
+        <section class="product-gallery" id="gallery-robot2">
+          <div class="main-display">
+            <img src="assets/images/robot2-2d.jpg" alt="Robot 2" id="main-display-robot2">
+          </div>
+          
+          <div class="thumbnail-grid">
+            <div class="thumbnail-item">
+              <div class="thumbnail active" data-src="assets/images/robot2-2d.jpg" data-type="image" data-target="main-display-robot2">
+                <img src="assets/images/robot2-2d.jpg" alt="2D Design">
+              </div>
+              <span class="thumbnail-label">2D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/robot2-3d.jpg" data-type="image" data-target="main-display-robot2">
+                <img src="assets/images/robot2-3d.jpg" alt="3D Model">
+              </div>
+              <span class="thumbnail-label">3D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/robot2-circuit.jpg" data-type="image" data-target="main-display-robot2">
+                <img src="assets/images/robot2-circuit.jpg" alt="Circuit Diagram">
+              </div>
+              <span class="thumbnail-label">Circuit Diagram</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/robot2-video.mp4" data-type="video" data-target="main-display-robot2">
+                <video muted loop>
+                  <source src="assets/images/robot2-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="thumbnail-label">Video</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="component-info">
+          <h3 class="title">Robot 2</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Advanced robotic features</li>
+            <li>Includes sensors for basic interaction</li>
+            <li>Teaches about sensor integration</li>
+            <li>More complex circuit than Robot 1</li>
+            <li>Step-by-step soldering guide</li>
+            <li>Expandable with additional modules</li>
+            <li>Great for intermediate learners</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 5 - Rocket 3 Organ Music Instrument -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 5</h2>
+      <div class="component-row">
+        <section class="product-gallery" id="gallery-rocket3">
+          <div class="main-display">
+            <img src="assets/images/rocket3-2d.jpg" alt="Rocket 3 Organ Music Instrument" id="main-display-rocket3">
+          </div>
+          
+          <div class="thumbnail-grid">
+            <div class="thumbnail-item">
+              <div class="thumbnail active" data-src="assets/images/rocket3-2d.jpg" data-type="image" data-target="main-display-rocket3">
+                <img src="assets/images/rocket3-2d.jpg" alt="2D Design">
+              </div>
+              <span class="thumbnail-label">2D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/rocket3-3d.jpg" data-type="image" data-target="main-display-rocket3">
+                <img src="assets/images/rocket3-3d.jpg" alt="3D Model">
+              </div>
+              <span class="thumbnail-label">3D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/rocket3-circuit.jpg" data-type="image" data-target="main-display-rocket3">
+                <img src="assets/images/rocket3-circuit.jpg" alt="Circuit Diagram">
+              </div>
+              <span class="thumbnail-label">Circuit Diagram</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/rocket3-video.mp4" data-type="video" data-target="main-display-rocket3">
+                <video muted loop>
+                  <source src="assets/images/rocket3-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="thumbnail-label">Video</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="component-info">
+          <h3 class="title">Rocket 3 Organ Music Instrument</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Combines electronics with music</li>
+            <li>Creates different musical tones</li>
+            <li>Teaches about sound generation circuits</li>
+            <li>Includes speaker and tone generator</li>
+            <li>Color-coded components for easy assembly</li>
+            <li>Fun and educational project</li>
+            <li>Great for music enthusiasts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 6 - Shake Toy -->
+    <div class="component-section reveal">
+      <h2 class="h2-large section-title">Component 6</h2>
+      <div class="component-row">
+        <section class="product-gallery" id="gallery-shake-toy">
+          <div class="main-display">
+            <img src="assets/images/shake-toy-2d.jpg" alt="Shake Toy" id="main-display-shake-toy">
+          </div>
+          
+          <div class="thumbnail-grid">
+            <div class="thumbnail-item">
+              <div class="thumbnail active" data-src="assets/images/shake-toy-2d.jpg" data-type="image" data-target="main-display-shake-toy">
+                <img src="assets/images/shake-toy-2d.jpg" alt="2D Design">
+              </div>
+              <span class="thumbnail-label">2D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/shake-toy-3d.jpg" data-type="image" data-target="main-display-shake-toy">
+                <img src="assets/images/shake-toy-3d.jpg" alt="3D Model">
+              </div>
+              <span class="thumbnail-label">3D Image</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/shake-toy-circuit.jpg" data-type="image" data-target="main-display-shake-toy">
+                <img src="assets/images/shake-toy-circuit.jpg" alt="Circuit Diagram">
+              </div>
+              <span class="thumbnail-label">Circuit Diagram</span>
+            </div>
+            
+            <div class="thumbnail-item">
+              <div class="thumbnail" data-src="assets/images/shake-toy-video.mp4" data-type="video" data-target="main-display-shake-toy">
+                <video muted loop>
+                  <source src="assets/images/shake-toy-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="thumbnail-label">Video</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="component-info">
+          <h3 class="title">Shake Toy</h3>
+          <h3>Features:</h3>
+          <ul class="component-features">
+            <li>Interactive motion-activated toy</li>
+            <li>Uses accelerometer or tilt sensor</li>
+            <li>Teaches about motion detection circuits</li>
+            <li>Fun LED light patterns when shaken</li>
+            <li>Simple yet engaging project</li>
+            <li>Great for younger learners</li>
+            <li>Durable construction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Script for swapping product images and videos -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize all galleries
+      document.querySelectorAll('.product-gallery').forEach(gallery => {
+        const thumbnails = gallery.querySelectorAll('.thumbnail');
+        const mainDisplay = gallery.querySelector('.main-display');
+        
+        thumbnails.forEach(thumbnail => {
+          thumbnail.addEventListener('click', function() {
+            // Remove active class from all thumbnails in this gallery
+            thumbnails.forEach(t => t.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail
+            this.classList.add('active');
+            
+            const src = this.getAttribute('data-src');
+            const type = this.getAttribute('data-type');
+            const targetId = this.getAttribute('data-target');
+            const targetDisplay = document.getElementById(targetId);
+            
+            if (type === 'video') {
+              // Replace with video
+              const video = document.createElement('video');
+              video.src = src;
+              video.controls = true;
+              video.autoplay = true;
+              video.id = targetId;
+              
+              mainDisplay.innerHTML = '';
+              mainDisplay.appendChild(video);
+            } else {
+              // Replace with image
+              const img = document.createElement('img');
+              img.src = src;
+              img.alt = this.querySelector('img').alt;
+              img.id = targetId;
+              
+              mainDisplay.innerHTML = '';
+              mainDisplay.appendChild(img);
+            }
+          });
+          
+          // Auto-play video thumbnails on hover
+          const videoThumbnail = thumbnail.querySelector('video');
+          if (videoThumbnail) {
+            thumbnail.addEventListener('mouseenter', () => {
+              videoThumbnail.play();
+            });
+            
+            thumbnail.addEventListener('mouseleave', () => {
+              videoThumbnail.pause();
+              videoThumbnail.currentTime = 0;
+            });
+          }
+        });
+      });
+
+      // Scroll Reveal Animation
+      ScrollReveal().reveal('.reveal', {
+        delay: 200,
+        distance: '30px',
+        duration: 1000,
+        easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        interval: 200,
+        reset: true
+      });
+
+      // Fallback for ScrollReveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {threshold: 0.1});
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+<!-- Internal CSS -->
+  <style>
     .product-container {
       max-width: 1200px;
       margin: 2rem auto;
@@ -140,9 +559,7 @@
     /* Gallery Styles */
     .product-gallery {
       background: var(--white);
-      border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     
     .main-display {
@@ -157,14 +574,6 @@
       justify-content: center;
     }
     
-    .main-display-content {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
     .main-display img,
     .main-display video {
       max-width: 100%;
@@ -173,7 +582,7 @@
     }
     
     .main-display video {
-      background-color: #000;
+        background-color: #000;
     }
     
     .thumbnail-grid {
@@ -184,8 +593,8 @@
     
     @media (max-width: 768px) {
       .thumbnail-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+          grid-template-columns: repeat(4, 1fr);
+        }
     }
     
     .thumbnail-item {
@@ -231,306 +640,8 @@
       text-align: center;
     }
   </style>
-</head>
-<body>
-  <section class="product-gallery">
-    <!-- Main display - shows the currently selected media -->
-    <div class="main-display">
-      <img src="assets/images/ohms-2d.jpg" alt="Ohms Law Rocket" id="main-display">
-    </div>
-    
-    <!-- Thumbnail grid -->
-    <div class="thumbnail-grid">
-        <div class="thumbnail-item">
-          <div class="thumbnail active" data-src="assets/images/ohms-2d.jpg" data-type="image">
-            <img src="assets/images/ohms-2d.jpg" alt="2D Design">
-          </div>
-          <span class="thumbnail-label">2D Image</span>
-        </div>
-        
-        <div class="thumbnail-item">
-          <div class="thumbnail" data-src="assets/images/ohms-3d.jpg" data-type="image">
-            <img src="assets/images/ohms-3d.jpg" alt="3D Model">
-          </div>
-          <span class="thumbnail-label">3D Image</span>
-        </div>
-        
-        <div class="thumbnail-item">
-          <div class="thumbnail" data-src="assets/images/ohms-circuit.jpg" data-type="image">
-            <img src="assets/images/ohms-circuit.jpg" alt="Circuit Diagram">
-          </div>
-          <span class="thumbnail-label">Circuit Diagram</span>
-        </div>
-        
-        <div class="thumbnail-item">
-          <div class="thumbnail" data-src="assets/images/ohms-video.mp4" data-type="video">
-            <video muted loop>
-              <source src="assets/images/ohms-video.mp4" type="video/mp4">
-            </video>
-          </div>
-          <span class="thumbnail-label">Video</span>
-        </div>
-      </div>
-  </section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const thumbnails = document.querySelectorAll('.thumbnail');
-      const mainDisplay = document.getElementById('main-display');
-      const mainDisplayContainer = document.querySelector('.main-display');
-      
-      thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function() {
-          // Remove active class from all thumbnails
-          thumbnails.forEach(t => t.classList.remove('active'));
-          
-          // Add active class to clicked thumbnail
-          this.classList.add('active');
-          
-          const src = this.getAttribute('data-src');
-          const type = this.getAttribute('data-type');
-          
-          if (type === 'video') {
-            // Replace with video
-            const video = document.createElement('video');
-            video.src = src;
-            video.controls = true;
-            video.autoplay = true;
-            video.id = 'main-display';
-            
-            mainDisplayContainer.innerHTML = '';
-            mainDisplayContainer.appendChild(video);
-          } else {
-            // Replace with image
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = this.querySelector('img').alt;
-            img.id = 'main-display';
-            
-            mainDisplayContainer.innerHTML = '';
-            mainDisplayContainer.appendChild(img);
-          }
-        });
-        
-        // Auto-play video thumbnails on hover
-        const videoThumbnails = thumbnail.querySelector('video');
-        if (videoThumbnails) {
-          thumbnail.addEventListener('mouseenter', () => {
-            videoThumbnails.play();
-          });
-          
-          thumbnail.addEventListener('mouseleave', () => {
-            videoThumbnails.pause();
-            videoThumbnails.currentTime = 0;
-          });
-        }
-      });
-    });
-
-    
-  </script>
-
-  
-        <div class="component-info">
-          <h3 class="title">Ohms Law Rocket</h3>
-          <h3>Features:</h3>
-          <ul class="component-features">
-            <li>Hands-on introduction to Ohm's Law</li>
-            <li>No prior soldering experience needed</li>
-            <li>LED lighting effects when completed</li>
-            <li>Includes all necessary components</li>
-            <li>Detailed instruction manual</li>
-            <li>Teaches basic circuit concepts</li>
-            <li>Great STEM learning tool</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Digital Multimeter -->
-    <div class="component-section reveal">
-      <h2 class="h2-large section-title">Component 2</h2>
-      <div class="component-row">
-          <div class="component-images">
-              <img src="assets/portfolio3.png" alt="Digital Multimeter" class="main-component-image" id="multimeter-main">
-              <div class="thumbnail-container">
-            <img src="assets/portfolio3.png" class="thumbnail active" alt="Multimeter Front" data-target="multimeter-main">
-            <img src="assets/portfolio3-1.png" class="thumbnail" alt="Multimeter Back" data-target="multimeter-main">
-            <img src="assets/portfolio3-2.png" class="thumbnail" alt="Multimeter Probes" data-target="multimeter-main">
-        </div>
-        </div>
-        <div class="component-info">
-          <h3 class="title">Push Button Rocket</h3>
-          <h3>Features:</h3>
-          <ul class="component-features">
-              <li>Auto-ranging capability</li>
-            <li>Measures voltage, current, resistance</li>
-            <li>Diode and continuity testing</li>
-            <li>LCD backlit display</li>
-            <li>Includes test leads and case</li>
-        </ul>
-        </div>
-    </div>
-    </div>
-    
-    <!-- Solder Wire -->
-    <div class="component-section reveal">
-      <h2 class="h2-large section-title">Component 3</h2>
-      <div class="component-row">
-          <div class="component-images">
-              <img src="assets/portfolio4.png" alt="Solder Wire" class="main-component-image" id="solder-main">
-          <div class="thumbnail-container">
-            <img src="assets/portfolio4.png" class="thumbnail active" alt="Solder Spool" data-target="solder-main">
-            <img src="assets/portfolio4-1.png" class="thumbnail" alt="Solder Closeup" data-target="solder-main">
-            <img src="assets/portfolio4-2.png" class="thumbnail" alt="Solder Packaging" data-target="solder-main">
-        </div>
-        </div>
-        <div class="component-info">
-          <h3 class="title">Robot 1</h3>
-          <h3>Features:</h3>
-          <ul class="component-features">
-              <li>0.8mm diameter, 50g spool</li>
-            <li>Rosin core flux</li>
-            <li>Melting point: 217°C</li>
-            <li>Excellent wetting properties</li>
-            <li>Compliant with RoHS standards</li>
-          </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Helping Hands -->
-<div class="component-section reveal">
-    <h2 class="h2-large section-title">Component 4</h2>
-    <div class="component-row">
-        <div class="component-images">
-            <img src="assets/portfolio5.png" alt="Helping Hands" class="main-component-image" id="hands-main">
-          <div class="thumbnail-container">
-              <img src="assets/portfolio5.png" class="thumbnail active" alt="Helping Hands Front" data-target="hands-main">
-            <img src="assets/portfolio5-1.png" class="thumbnail" alt="Helping Hands Side" data-target="hands-main">
-            <img src="assets/portfolio5-2.png" class="thumbnail" alt="Helping Hands Magnifier" data-target="hands-main">
-          </div>
-        </div>
-        <div class="component-info">
-            <h3 class="title">Robot 2</h3>
-            <h3>Features:</h3>
-            <ul class="component-features">
-            <li>Two adjustable alligator clips</li>
-            <li>3x magnifying glass</li>
-            <li>Weighted base for stability</li>
-            <li>360° rotating arms</li>
-            <li>Rubber-coated clips</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Desoldering Pump -->
-    <div class="component-section reveal">
-      <h2 class="h2-large section-title">Component 5</h2>
-      <div class="component-row">
-          <div class="component-images">
-              <img src="assets/portfolio6.png" alt="Desoldering Pump" class="main-component-image" id="pump-main">
-          <div class="thumbnail-container">
-            <img src="assets/portfolio6.png" class="thumbnail active" alt="Pump Front" data-target="pump-main">
-            <img src="assets/portfolio6-1.png" class="thumbnail" alt="Pump Side" data-target="pump-main">
-            <img src="assets/portfolio6-2.png" class="thumbnail" alt="Pump Nozzle" data-target="pump-main">
-          </div>
-        </div>
-        <div class="component-info">
-          <h3 class="title">Rocket 3 Organ Music Instrument</h3>
-          <h3>Features:</h3>
-          <ul class="component-features">
-            <li>Spring-loaded suction</li>
-            <li>Heat-resistant silicone nozzle</li>
-            <li>Aluminum barrel</li>
-            <li>One-handed operation</li>
-            <li>Cleaning needle included</li>
-          </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Tool Set -->
-<div class="component-section reveal">
-      <h2 class="h2-large section-title">Component 6</h2>
-      <div class="component-row">
-          <div class="component-images">
-              <img src="assets/portfolio7.png" alt="Tool Set" class="main-component-image" id="tools-main">
-          <div class="thumbnail-container">
-              <img src="assets/portfolio7.png" class="thumbnail active" alt="Tool Set Overview" data-target="tools-main">
-            <img src="assets/portfolio7-1.png" class="thumbnail" alt="Precision Screwdrivers" data-target="tools-main">
-            <img src="assets/portfolio7-2.png" class="thumbnail" alt="Tweezers" data-target="tools-main">
-        </div>
-        </div>
-        <div class="component-info">
-            <h3 class="title">Shake Toy</h3>
-          <h3>Features:</h3>
-          <ul class="component-features">
-            <li>6 precision screwdrivers</li>
-            <li>Anti-static tweezers</li>
-            <li>Wire cutters</li>
-            <li>Needle-nose pliers</li>
-            <li>Storage case</li>
-        </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Image Swapping Functionality
-        document.querySelectorAll('.thumbnail').forEach(thumbnail => {
-        thumbnail.addEventListener('click', function() {
-          const targetId = this.getAttribute('data-target');
-          const mainImage = document.getElementById(targetId);
-          
-          // Get current active thumbnail in this container
-          const container = this.closest('.thumbnail-container');
-          const currentActive = container.querySelector('.thumbnail.active');
-          
-          // Swap images
-          const tempSrc = mainImage.src;
-          const tempAlt = mainImage.alt;
-          
-          mainImage.src = this.src;
-          mainImage.alt = this.alt;
-          
-          this.src = tempSrc;
-          this.alt = tempAlt;
-          
-          // Update active states
-          currentActive.classList.remove('active');
-          this.classList.add('active');
-        });
-      });
-
-      // Scroll Reveal Animation
-      ScrollReveal().reveal('.reveal', {
-        delay: 200,
-        distance: '30px',
-        duration: 1000,
-        easing: 'cubic-bezier(0.5, 0, 0, 1)',
-        interval: 200,
-        reset: true
-      });
-
-      // Fallback for ScrollReveal
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      }, {threshold: 0.1});
-
-      document.querySelectorAll('.reveal').forEach(el => {
-        observer.observe(el);
-      });
-    });
-  </script>
-
+    <!-- Footer Section -->
   <footer class="footer" data-section id="contact">
     <div class="container">
       <div class="footer-top">
@@ -640,9 +751,11 @@
     </div>
   </footer>
 
+    <!-- Back to Top Button -->
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
   </a>
+
   <!-- Ion Icons -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
