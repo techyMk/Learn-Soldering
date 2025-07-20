@@ -1982,12 +1982,14 @@ body {
 }
     
     .component-info {
-      display: flex;
+      /* display: flex;
       flex-direction: column;
       justify-content: center;
-      align-content: center;
+      align-content: center; */
       flex: 1;
       min-width: 300px;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
     
     .component-info .title {
@@ -2085,12 +2087,32 @@ body {
         height: 60px;
       }
 
-  .kit-contents {
-    grid-template-columns: 1fr; /* 1 column on small screens */
-  }
+    .kit-contents {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
   
   /* For Flexbox alternative: */
   .kit-contents li {
     flex: 0 0 100%; /* Full width on mobile */
+  }
+
+  .component-info {
+    padding: 0 15px; /* Slightly reduced padding on mobile */
+    width: 100%; /* Ensure full width */
+    margin-left: 0; /* Remove any potential left margin */
+  }
+  
+  /* Ensure all content aligns the same way */
+  .component-info .title,
+  .component-info h3,
+  .component-features {
+    text-align: left; /* Consistent left alignment */
+    margin-left: 0; /* Remove any left margin */
+    padding-left: 0; /* Remove any left padding */
+  }
+  
+  /* Fix list alignment */
+  .component-features {
+    padding-left: 20px; /* Standard list indentation */
   }
 }
